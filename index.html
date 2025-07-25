@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Kayıt Formu</title>
+</head>
+
+<body>
+
+<section class="form_section"> 
+
+  <div class="header">
+    <h1 id="title">Survey Form For <br> CSS Practice</h1>
+  </div>
+    
+  <div class="form_container">
+
+    <form action="#" id="survey-form" method="get">
+      <input type="text" id="name" type="text" placeholder="&#xf007;  Full Name" ><br>
+      <input type="email" id="email" type="email" required placeholder="&#xf0e0;  Mail"> <br>
+      <input type="text" id="number" type="number" min="18" max="50"  pattern="[0-100]" required placeholder=" &#xf1fd;  Age"> <br>
+      <select name="selected" id="dropdown">
+         <option value="selected" id="selected">Select Gender</option>
+         <option value="male" id="male">Erkek</option>
+         <option value="female" id="female">Kadın</option>
+      </select> <br>
+      <label for="radio-label" id="radio-label">Where did you here us?</label> <br>
+      <input type="radio" name="radio-btn" id="instagram" value="Instagram">
+      <label for="instagram">Instagram</label> <br>
+      <input type="radio" name="radio-btn" id="Linkedn" value="Instagram">
+      <label for="instagram">Linkedn</label>  <br>
+      <div class="checkbox">
+      <input  type="checkbox" name="selected1" id="selected1" value="terms_of_service">
+      <label for="selected1"> Terms Of <br> Service </label>
+      <input  type="checkbox" name="selected2" id="selected2" value="subscribe_for_news">
+      <label for="selected2"> Subscribe For <br> News </label> <br>
+      </div>
+      <textarea name="suggestions" id="suggestions" cols="30" rows="3" placeholder="Suggestions"></textarea> <br>
+      <input type="button" value="Sign Up" id="submit">
+    </form>
+
+  </div>
+</section>
+
+</body>
+
+</html>

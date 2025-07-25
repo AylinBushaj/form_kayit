@@ -1,0 +1,112 @@
+*{
+  background-color: #a6415c;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+:root{
+  --text-color: #c5b9d3;
+  --second-text-color: #50a8a5;
+  --border-color: #b5f1f3;
+  --form-color: #2d3e52;    
+  --text-font-family: 'Roboto', serif;
+} 
+
+.form_section{
+  
+  font-family: var(--text-font-family);
+  color:var(--text-color);
+  line-height: 2rem;
+}
+
+.header{
+  text-align: center;
+  margin-top:4rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.form_container{
+  width: 50rem;
+  min-height: 100vh;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#survey-form{
+  width: 50%;
+  height: auto;
+  background-color: var(--form-color);
+  font-size: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  padding: 3rem;
+  position: absolute;
+  
+}
+
+input, label, select,textarea{
+  background-color: var(--form-color);
+  border-color: var(--second-text-color);
+  border-radius: 0.3rem;
+}
+
+#name, #email, #number{
+  min-width:90%;
+  min-height:3rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--second-text-color);
+  
+}
+
+#name::placeholder, #email::placeholder, #number::placeholder{
+  font-size: 0.7rem;
+  color:var(--text-color);
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+}
+
+#name::placeholder{
+  font-display: flex;
+}
+
+select{
+  border:none;
+  border-bottom: 1px solid #50a8a5;
+  color: var(--second-text-color);
+  min-width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+  border-radius: 0;
+}
+
+.checkbox{
+  display: flex;
+  justify-content:space-evenly;
+  line-height: 1rem;
+  background-color: var(--form-color);
+  margin: 1rem 0;
+}
+
+#suggestions{
+  min-width: 100%;
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+
+#submit{
+  border: 0;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+
+
+
