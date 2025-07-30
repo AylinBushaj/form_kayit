@@ -18,6 +18,10 @@
   font-family: var(--text-font-family);
   color:var(--text-color);
   line-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header{
@@ -30,10 +34,10 @@
 .form_container{
   width: 50rem;
   min-height: 100vh;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+
 }
 
 #survey-form{
@@ -68,6 +72,12 @@ input, label, select,textarea{
   color:var(--text-color);
   font-family: 'Font Awesome 5 Free';
   font-weight: 600;
+}
+
+#number::-webkit-outer-spin-button,
+#number::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin:0
 }
 
 #name::placeholder{
